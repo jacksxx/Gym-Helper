@@ -4,16 +4,6 @@
 
 
 body {
-  background-color: black;
+  background-color: black;  
 }
 
-@layer utilities {
-  .text-balance {
-    text-wrap: balance;
-  }
-}
-@layer components{
-  .mainComponent{
-    @apply px-10 mb-10 pb-10 pt-2 text-white
-  }
-}

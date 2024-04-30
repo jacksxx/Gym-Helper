@@ -1,12 +1,16 @@
+"use client";
 import React from "react";
+import * as S from "./styles";
 
 const Footer = () => {
   return (
-    <footer>
-      <div className="fixed w-full flex flex-col z-0 bottom-0 font-semibold text-center gap-3 bg-slate-100 rounded-sm">        
-        <p>Gym Helper App ©{new Date().getFullYear()}</p>
-      </div>
-    </footer>
+    <S.Footer>
+      <S.Container>
+        <S.Text className="text-[20px]">
+          Gym Helper App ©{new Date().getFullYear()}
+        </S.Text>
+      </S.Container>
+    </S.Footer>
   );
 };
 

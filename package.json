@@ -16,7 +16,8 @@
     "query": "github:tanstack/react-query",
     "react": "^18",
     "react-dom": "^18",
-    "react-hook-form": "^7.51.3"
+    "react-hook-form": "^7.51.3",
+    "styled-components": "^6.1.8"
   },
   "devDependencies": {
     "@types/node": "^20",

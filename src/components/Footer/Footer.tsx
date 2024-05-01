@@ -6,7 +6,7 @@ const Footer = () => {
   return (
     <S.Footer>
       <S.Container>
-        <S.Text className="text-[20px]">
+        <S.Text>
           Gym Helper App ©{new Date().getFullYear()}
         </S.Text>
       </S.Container>

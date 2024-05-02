@@ -28,7 +28,7 @@ const Navbar = () => {
             <Nav hidden={false} />
           </S.NavBar>
         </S.Wrapper>
-        <div className="flex items-center space-x-4 pr-2">
+        <div className="flex items-center space-x-4 pr-2 round">
           {/* <div
             onClick={() => setShowProfile(!showProfile)}
             className="relativa cursor-pointer"

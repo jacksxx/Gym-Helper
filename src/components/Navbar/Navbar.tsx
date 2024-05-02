@@ -3,19 +3,19 @@
 import Link from "next/link";
 import * as S from "./styles";
 import { usePathname } from "next/navigation";
-// import { BsChevronCompactUp } from "react-icons/bs";
+import { BsChevronCompactUp } from "react-icons/bs";
 import React, { useState } from "react";
 import Image from "next/image";
 import usericon from "@/images/user.jpg";
-// import NavbarHidden from "./NavbarHidden";
+import NavBarHidden from "./NavBarHidden";
 import { signIn, signOut, useSession } from "next-auth/react";
 // import SignOut from "../SignOut";
-// import NavbarItens from "./NavbarItens";
+import { Nav } from "./NavBarItens";
 
 const Navbar = () => {
-  // const pathname = usePathname();
+  const pathname = usePathname();
   // const [showProfile, setShowProfile] = useState<boolean>(false);
-  // const [showNav, setShowNav] = useState<boolean>(false);
+  const [showNav, setShowNav] = useState<boolean>(false);
   // const { data: session } = useSession();
   return (
     <S.Container>
@@ -25,44 +25,11 @@ const Navbar = () => {
             <S.Logo>Gym Helper</S.Logo>
           </Link>
           <S.NavBar>
-            {/* {/* <ul className="flex items-center lg:space-x-10 space-x-7 opacity-70 text-[15px]">
-              {NavbarItens.map((item, index) => (
-                <li key={index} className="navComponents">
-                  <Link
-                    href={item.href}
-                    className={` py-3 inline-block w-full 
-                                        ${
-                                          pathname === item.href
-                                            ? "font-bold"
-                                            : ""
-                                        }
-                                         hover:text-neutral-500 transition-colors duration-100`}
-                  >
-                    {item.label}
-                  </Link>
-                </li>
-              ))}
-              {session?.user && (
-                <li className="navComponents">
-                  <Link
-                    href={"/posts"}
-                    className={` py-3 inline-block w-full 
-                                        ${
-                                          pathname === "/posts"
-                                            ? "font-bold"
-                                            : ""
-                                        }
-                                         hover:text-neutral-500 transition-colors duration-100`}
-                  >
-                    My Posts
-                  </Link>
-                </li>
-              )}               
-            </ul> */}
+            <Nav hidden={false} />
           </S.NavBar>
         </S.Wrapper>
-        {/* <div className="flex items-center space-x-4 pr-2">
-          <div
+        <div className="flex items-center space-x-4 pr-2">
+          {/* <div
             onClick={() => setShowProfile(!showProfile)}
             className="relativa cursor-pointer"
           >
@@ -74,18 +41,13 @@ const Navbar = () => {
               alt=""
             />
             <SignOut showProfile={showProfile} />
-          </div>
-          <span
-            onClick={() => setShowNav(!showNav)}
-            className={`p-[9px] bg-gray-200 rounded-full md:hidden transition ease-in duration-150 ${
-              showNav ? "rotate-180" : "0"
-            }`}
-          >
+          </div> */}
+          <S.SpanButton showNav={showNav} onClick={() => setShowNav(!showNav)}>
             <BsChevronCompactUp />
-          </span>
-        </div> */}
+          </S.SpanButton>
+        </div>
       </S.ContainerNavBar>
-      {/* <NavbarHidden showNav={showNav} setShowNav={setShowNav} /> */}
+      <NavBarHidden showNav={showNav} setShowNav={setShowNav} />
     </S.Container>
   );
 };

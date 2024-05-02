@@ -13,7 +13,7 @@ const page = () => {
       </div>
       <div className="flex flex-col gap-5 items-center">
         <p className="flex flex-col items-center">Com Gym Helper Você: </p>
-        <div className="grid grid-cols-3 items-center justify-center text-center">
+        <div className="grid grid-cols-1  lg:grid-cols-2 xl:grid-cols-3 items-center justify-center text-center space-x-2">
           <Card
             alt="kettlebel"
             source="https://images.pexels.com/photos/4164844/pexels-photo-4164844.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"

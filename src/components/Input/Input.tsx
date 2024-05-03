@@ -9,7 +9,7 @@ type InputProps = InputHTMLAttributes<HTMLInputElement> & {
 export const Input = forwardRef<HTMLInputElement, InputProps>(
   ({ type = "text", id = "", label = "", placeholder = "", ...props }, ref) => {
     return (
-      <div className="flex flex-col">
+      <>
         <Label htmlFor={id}>
           {label}
         </Label>
@@ -20,7 +20,7 @@ export const Input = forwardRef<HTMLInputElement, InputProps>(
           id={id}
           {...props}
         />
-      </div>
+      </>
     );
   }
 );

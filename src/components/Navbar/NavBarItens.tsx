@@ -9,12 +9,12 @@ const NavBarItens = [
     href: "/about",
   },
   {
-    label: "About",
-    href: "/about",
+    label: "Registrar",
+    href: "/register",
   },
   {
-    label: "About",
-    href: "/about",
+    label: "Login",
+    href: "/login",
   },
 ];
 

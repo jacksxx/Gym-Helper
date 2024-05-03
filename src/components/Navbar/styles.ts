@@ -3,7 +3,6 @@ import styled, { css } from "styled-components";
 export const Container = styled.div`
   border-bottom: 1px solid white;
 `;
-
 export const ContainerNavBar = styled.div`
   display: flex;
   align-items: center;
@@ -12,7 +11,6 @@ export const ContainerNavBar = styled.div`
   padding-bottom: 1rem;
   position: relative;
 `;
-
 export const Wrapper = styled.div`
   display: flex;
   align-items: center;
@@ -30,7 +28,6 @@ export const NavBar = styled.nav`
     display: none;
   }
 `;
-
 export const Logo = styled.div`
   margin-left: 0.75rem;
   margin-right: 0.75rem;
@@ -40,13 +37,12 @@ export const Logo = styled.div`
   box-shadow: 0 2px 4px white;
   font-weight: 600;
   border-radius: 0.375rem;
-  transition: background 0.3s ease; /* Adicionando transição */
+  transition: background 0.3s ease; 
 
   &:hover {
     border: 0.5px solid white;
   }
 `;
-
 export const NavBarHidden = styled.nav<{ showNav: boolean }>`
   @media (min-width: 768px) {
     display: none;
@@ -87,7 +83,6 @@ export const NavUlHidden = styled.ul`
   flex-direction: column;
   font-size: 18px;
 `;
-
 export const NavLink = styled.span<{ pathname: string; refer: string }>`
   padding: 0.75rem;
   border-radius: 0.125rem;

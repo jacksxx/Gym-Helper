@@ -14,11 +14,9 @@ export const ContainerNavBar = styled.div`
 export const Wrapper = styled.div`
   display: flex;
   align-items: center;
-
   @media (min-width: 768px) {
     justify-content: space-x-5;
   }
-
   @media (min-width: 1024px) {
     justify-content: space-x-10;
   }
@@ -37,10 +35,9 @@ export const Logo = styled.div`
   box-shadow: 0 2px 4px white;
   font-weight: 600;
   border-radius: 0.375rem;
-  transition: background 0.3s ease; 
-
+  transition: background 0.3s ease;
   &:hover {
-    border: 0.5px solid white;
+    background-image: radial-gradient(circle, black, white);
   }
 `;
 export const NavBarHidden = styled.nav<{ showNav: boolean }>`

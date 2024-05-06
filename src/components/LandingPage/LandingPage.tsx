@@ -1,10 +1,11 @@
 import React from "react";
+import * as S from "./styles";
 
 const LandingPage = () => {
   return (
-    <div className="flex flex-col items-center mt-10">
+    <S.Container>
       <h1>LandingPage</h1>
-    </div>
+    </S.Container>
   );
 };
 
